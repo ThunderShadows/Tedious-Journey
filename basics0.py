@@ -1,3 +1,4 @@
+## Storing values in variables, input and output, type conversions, type casting and string formatting in Python
 weight = int(input("Enter your weight: "))
 unit = input("(K)g or (L)bs: ")
 if unit.upper() == "L":

@@ -1,3 +1,4 @@
+## Functions in Python
 def good(name,num):
     print(f"Hello {name}")
     print(num)
