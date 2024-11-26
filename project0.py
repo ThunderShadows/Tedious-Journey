@@ -1,3 +1,4 @@
+# Python Automation project Using Excel and openpyxl library/package
 import openpyxl as xl
 wb = xl.load_workbook('transactions.xlsx')
 sheet = wb['Sheet1']

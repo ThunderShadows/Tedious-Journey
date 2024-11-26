@@ -1,3 +1,4 @@
+# Module which converts degrees into celsius and farenheit and also calculates the maximum value in a list
 def convert_temperature(celsius):
     fahrenheit = (celsius * 9/5) + 32
     return fahrenheit

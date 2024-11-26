@@ -1,6 +1,7 @@
-import module as md
+# Creating Packages and importing the methods andc classes and using them in Python
+import module as md # Refer to module directory in the file directory structure
 import random as rd
-import ecommerce.shipping as eship
+import ecommerce.shipping as eship # Refer to ecommerce directory in the file directory structure
 
 value = int(input("Enter the number: "))
 result = int(md.convert_temperature(value))
