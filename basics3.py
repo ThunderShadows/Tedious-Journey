@@ -1,4 +1,4 @@
-## Dictionarys in Python
+## Dictionaries in Python
 phone_no = input("Enter the phone number: ")
 numbers = {
     "1": "One",
@@ -28,3 +28,13 @@ output =""
 for word in words:
     output+= emojis.get(word,word) + " "
 print(output)
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(type(thisdict))
+
+my_dict_2 = dict(name="Lisa", age=27, city="Boston")
+print(my_dict_2)
