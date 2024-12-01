@@ -11,6 +11,7 @@
 # Input: arr[] = [0, 0]
 # Output: [0, 0]
 
+# Time Complexity: O(n) and Space Complexity: O(1)
 class Solution:
     def pushZerosToEnd(arr):
         count = 0
