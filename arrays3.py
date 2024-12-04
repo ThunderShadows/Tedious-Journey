@@ -37,3 +37,14 @@ if __name__ == "__main__":
     Solution.rotateArr(arr, d)
     for i in range(len(arr)):
         print(arr[i], end=" ")
+
+# def rotateArr(self, arr, d):
+#         n = len(arr)
+#         d %= n
+#         temp = [0] * n
+#         for i in range(n - d):
+#             temp[i] = arr[d + i]
+#         for i in range(d):
+#             temp[n - d + i] = arr[i]
+#         for i in range(n):
+#             arr[i] = temp[i]
