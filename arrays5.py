@@ -1,20 +1,28 @@
-# Python program for finding out majority element in an array
-# using hash map
+# Majority Element in an Array of size n such that it appears more than n/3 times
+# You are given an array of integer arr[] where each number represents a vote to a candidate. Return the candidates that have votes greater than one-third of the total votes, If there's not a majority vote, return an empty array. 
 
+# Note: The answer should be returned in an increasing format.
+
+# Examples:
+
+# Input: arr[] = [2, 1, 5, 5, 5, 5, 6, 6, 6, 6, 6]
+# Output: [5, 6]
+
+# Input: arr[] = [1, 2, 3, 4, 5]
+# Output: []
+
+# Time Complexity: O(n) and Space Complexity: O(n)
 def findMajority(arr):
     n = len(arr)
     freq = {}
     res = []
 
-    # find frequency of each number
     for ele in arr:
         freq[ele] = freq.get(ele, 0) + 1
 
-    # Iterate over each key-value pair in the hash map
     for ele, cnt in freq.items():
         
-        # Add the element to the result, if its frequency
-        # is greater than floor(n/3)
+
         if cnt > n // 3:
             res.append(ele)
 
