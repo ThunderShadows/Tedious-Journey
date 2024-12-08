@@ -1,4 +1,12 @@
-# Function to calculate the maximum profit
+# Given an array of stock prices, find the maximum profit that can be made by buying and selling the stock once. The catch is that you can't sell the stock on the same day you buy it. 
+
+# Input: prices[] = [100, 180, 260, 310, 40, 535, 695]
+# Output: 865
+
+# Input: prices[] = [4, 2, 2, 2, 4]
+# Output: 2
+
+# Time Complexity: O(n) and Space Complexity: O(1)
 def maximumProfit(prices):
     n = len(prices)
     lMin = prices[0]  # Local Minima
@@ -23,7 +31,7 @@ def maximumProfit(prices):
   
     return res
 
-# Driver Code
+
 if __name__ == "__main__":
     prices = [100, 180, 260, 310, 40, 535, 695]
     print(maximumProfit(prices))
