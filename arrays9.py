@@ -13,4 +13,16 @@
 
 # Time Complexity: O(n) and Space Complexity: O(1)
 
-https://github.com/ThunderShadows/Tedious-Journey.git
+def maxSubarraySum(arr):
+    
+    res = arr[0]
+    maxEnding = arr[0]
+
+    for i in range(1, len(arr)):
+        maxEnding = max(maxEnding + arr[i], arr[i])
+        res = max(res, maxEnding)
+    
+    return res
+
+arr = [2, 3, -8, 7, -1, 2, 3]
+print(maxSubarraySum(arr))
