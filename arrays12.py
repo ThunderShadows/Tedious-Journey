@@ -40,3 +40,33 @@ def missingNumber(arr):
 if __name__ == '__main__':
     arr = [2, -3, 4, 1, 1, 7]
     print(missingNumber(arr))
+
+# C++ program to find the first positive missing number 
+# using Sorting
+
+# # Function to find the first positive missing number
+# def missingNumber(arr):
+#     arr.sort()
+
+#     # res will hold the current smallest missing number,
+#     # initially set to 1
+#     res = 1
+#     for num in arr:
+
+#         # If we have found 'res' in the array,
+#         # 'res' is no longer missing, so increment it
+#         if num == res:
+#             res += 1
+
+#         # If the current element is larger than 'res',
+#         # 'res' cannot be found in the array,
+#         # so it is our final answer
+#         elif num > res:
+#             break
+#     return res
+
+
+# if __name__ == "__main__":
+
+#     arr = [2, -3, 4, 1, 1, 7]
+#     print(missingNumber(arr))
