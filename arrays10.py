@@ -39,3 +39,30 @@ def maxProduct(arr):
 
 arr = [-2, 6, -3, -10, 0, 2]
 print(maxProduct(arr))
+
+# # Python program to find Maximum Product Subarray 
+# # using nested loops
+
+# # Function to returns the product of max product subarray
+# def maxProduct(arr):
+#     n = len(arr)
+  
+#     # Initializing result
+#     result = arr[0]
+
+#     for i in range(n):
+#         mul = 1
+      
+#         # traversing in current subarray
+#         for j in range(i, n):
+#             mul *= arr[j]
+          
+#             # updating result every time
+#             # to keep track of the maximum product
+#             result = max(result, mul)
+    
+#     return result
+
+# if __name__ == "__main__":
+#     arr = [-2, 6, -3, -10, 0, 2]
+#     print(maxProduct(arr))
